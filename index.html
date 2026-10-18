@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
+    <!-- Responsive Viewport for Mobile, Tablet, and Desktop Displays -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO and Project Metadata -->
+    <title>Indian Culture and Heritage | Educational Heritage Project</title>
+    <meta name="description" content="An educational website on Indian Culture and Heritage created for a second-year college assignment. Explore historical monuments, classical arts, vibrant festivals, and traditions.">
+    <meta name="keywords" content="Indian Culture, Indian Heritage, Taj Mahal, Red Fort, Ajanta Caves, Hampi, Indian Festivals, College Assignment, Semantic HTML5, Dark Mode">
+    <meta name="author" content="Second Year College Student">
+
+    <!-- Early Theme Script: Prevents theme flickering on page reload -->
+    <script>
+        (function() {
+            var savedTheme = localStorage.getItem('theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
+
+    <!-- Google Web Fonts for Classical Heading & Clean Body Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- External Stylesheet: Indian Heritage Theme (Saffron, Cream, Brown, Green) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+    <!-- =======================================================================
+         1. <header> TAG:
+         Represents introductory content or a set of navigational aids for the page.
+         ======================================================================= -->
+    <header class="site-header">
+        <span class="header-badge">College Assignment &bull; Second Year</span>
+        <h1>Indian Culture and Heritage</h1>
+        <p class="tagline">Explore the Rich Heritage of Incredible India</p>
+    </header>
+
+    <!-- =======================================================================
+         2. <nav> TAG:
+         Represents a section of the page whose purpose is to provide navigation
+         links, either within the current document or to other documents.
+         ======================================================================= -->
+    <nav class="site-nav" aria-label="Main Navigation Menu">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#heritage-sites">Heritage Sites</a></li>
+                <li><a href="#culture">Indian Culture</a></li>
+                <li><a href="#festivals">Festivals</a></li>
+                <li><a href="#importance-of-heritage">About Heritage</a></li>
+                <li><a href="#useful-links">Useful Links</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Toggle Dark and Light Mode" title="Toggle Theme">
+                <span class="toggle-icon">☀️</span>
+                <span class="toggle-text">Light Mode</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- =======================================================================
+         3. <main> TAG:
+         Represents the dominant content of the <body> of a document.
+         There must be only one <main> element per document.
+         ======================================================================= -->
+    <main class="main-content">
+
+        <!-- ===================================================================
+             SECTION 1: HOME / INTRODUCTION
+             <section> represents a standalone portion of a document.
+             =================================================================== -->
+        <section id="home" class="content-section">
+            <div class="section-header">
+                <h2>Welcome to Incredible India</h2>
+                <p class="section-subtitle">A journey through 5,000 years of civilization, philosophy, art, and timeless architectural wonders.</p>
+            </div>
+
+            <div class="home-hero-grid">
+                <div class="home-text">
+                    <h3>The Cradle of Ancient Civilization</h3>
+                    <p>
+                        India is a land of profound antiquity and boundless diversity. Stretching from the snow-capped 
+                        Himalayas in the north to the tropical shores of the Indian Ocean in the south, our nation has 
+                        nurtured one of the oldest continuous civilizations on the planet.
+                    </p>
+                    <p>
+                        Over millennia, different eras, kingdoms, and philosophies—including the Vedic age, Buddhism, Jainism, 
+                        Mughal artistry, and regional dynasties—have woven an incomparable cultural fabric. India's heritage 
+                        is not confined to museum glass; it is living and breathing in our daily rituals, festivals, classical arts, 
+                        and ancient monuments.
+                    </p>
+                    
+                    <div class="home-highlight-box">
+                        <p>
+                            <strong>About This Website:</strong> This project has been developed as an educational 
+                            assignment for second-year college coursework to demonstrate semantic HTML5 structure, 
+                            accessible web design, and cultural knowledge dissemination.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="home-image-container">
+                    <!-- <figure> groups media content with an optional caption (<figcaption>) -->
+                    <figure>
+                        <img 
+                            src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Taj_Mahal%2C_Agra%2C_India_edit3.jpg" 
+                            alt="The white marble Taj Mahal with reflecting pool under a blue sky in Agra" 
+                            loading="lazy"
+                        >
+                        <figcaption>The Taj Mahal at Agra — an iconic symbol of Indian heritage and eternal architectural grace.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             SECTION 2: FAMOUS HERITAGE SITES
+             Contains self-contained <article> cards for each monument.
+             =================================================================== -->
+        <section id="heritage-sites" class="content-section">
+            <div class="section-header">
+                <h2>Famous Heritage Sites</h2>
+                <p class="section-subtitle">India is home to over 40 UNESCO World Heritage Sites reflecting architectural genius across centuries.</p>
+            </div>
+
+            <div class="monuments-grid">
+
+                <!-- ARTICLE 1: Taj Mahal -->
+                <article class="monument-card">
+                    <figure>
+                        <span class="unesco-badge">UNESCO Site</span>
+                        <img 
+                            src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Taj_Mahal%2C_Agra%2C_India_edit3.jpg" 
+                            alt="Front symmetric view of the Taj Mahal in Agra" 
+                            loading="lazy"
+                        >
+                    </figure>
+                    <div class="monument-content">
+                        <h3>Taj Mahal</h3>
+                        <p class="monument-location">&#128205; Agra, Uttar Pradesh</p>
+                        <p class="description">
+                            Commissioned in 1631 by Mughal Emperor Shah Jahan to house the tomb of his favorite wife, Mumtaz Mahal. 
+                            Built entirely of lustrous white Makrana marble, this monument is world-famous for its flawless bilateral symmetry, 
+                            four tapering minarets, and exquisite semi-precious stone inlay work (pietra dura).
+                        </p>
+                        <a 
+                            href="https://whc.unesco.org/en/list/252/" 
+                            class="learn-more-btn" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            title="Open UNESCO official page for Taj Mahal"
+                        >
+                            Learn More &rarr;
+                        </a>
+                    </div>
+                </article>
+
+                <!-- ARTICLE 2: Red Fort -->
+                <article class="monument-card">
+                    <figure>
+                        <span class="unesco-badge">UNESCO Site</span>
+                        <img 
+                            src="https://upload.wikimedia.org/wikipedia/commons/4/45/Red_Fort_Delhi.jpg" 
+                            alt="The imposing red sandstone walls of the Red Fort in Delhi" 
+                            loading="lazy"
+                        >
+                    </figure>
+                    <div class="monument-content">
+                        <h3>Red Fort (Lal Qila)</h3>
+                        <p class="monument-location">&#128205; Old Delhi, National Capital Region</p>
+                        <p class="description">
+                            Constructed in 1638 by Emperor Shah Jahan when he shifted his imperial capital from Agra to Delhi. 
+                            Its massive red sandstone ramparts enclose grand historical structures such as the Diwan-i-Aam and 
+                            Diwan-i-Khas. It serves as the historic rampart from where India's Prime Minister addresses the nation every Independence Day.
+                        </p>
+                        <a 
+                            href="https://whc.unesco.org/en/list/1054/" 
+                            class="learn-more-btn" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            title="Open UNESCO official page for Red Fort"
+                        >
+                            Learn More &rarr;
+                        </a>
+                    </div>
+                </article>
+
+                <!-- ARTICLE 3: Ajanta & Ellora Caves -->
+                <article class="monument-card">
+                    <figure>
+                        <span class="unesco-badge">UNESCO Site</span>
+                        <img 
+                            src="https://upload.wikimedia.org/wikipedia/commons/6/67/9_Ajanta_Caves_overview.jpg" 
+                            alt="Panoramic landscape of the horseshoe-shaped cliff housing Ajanta Caves" 
+                            loading="lazy"
+                        >
+                    </figure>
+                    <div class="monument-content">
+                        <h3>Ajanta &amp; Ellora Caves</h3>
+                        <p class="monument-location">&#128205; Chhatrapati Sambhaji Nagar, Maharashtra</p>
+                        <p class="description">
+                            Ajanta features 30 rock-cut Buddhist caves created between the 2nd century BCE and 480 CE, famous worldwide for 
+                            masterpiece tempera frescoes illustrating the life of Lord Buddha. Nearby Ellora presents 34 monumental caves 
+                            combining Buddhist, Hindu, and Jain shrines, crowned by the monolithic Kailash Temple carved from top to bottom from a single rock.
+                        </p>
+                        <a 
+                            href="https://whc.unesco.org/en/list/242/" 
+                            class="learn-more-btn" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            title="Open UNESCO official page for Ajanta Caves"
+                        >
+                            Learn More &rarr;
+                        </a>
+                    </div>
+                </article>
+
+                <!-- ARTICLE 4: Hampi -->
+                <article class="monument-card">
+                    <figure>
+                        <span class="unesco-badge">UNESCO Site</span>
+                        <img 
+                            src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Hampi_chariot.jpg" 
+                            alt="The iconic monolithic stone chariot at the Vijaya Vittala temple in Hampi" 
+                            loading="lazy"
+                        >
+                    </figure>
+                    <div class="monument-content">
+                        <h3>Monuments of Hampi</h3>
+                        <p class="monument-location">&#128205; Vijayanagara, Karnataka</p>
+                        <p class="description">
+                            The glorious capital of the Vijayanagara Empire during the 14th century, set amidst rugged granite boulder hills 
+                            by the Tungabhadra River. The vast open-air museum houses over 1,600 surviving ruins, musical stone pillars, and the 
+                            iconic Stone Chariot in the Vijaya Vittala Temple, capturing the peak of Dravidian architecture.
+                        </p>
+                        <a 
+                            href="https://whc.unesco.org/en/list/341/" 
+                            class="learn-more-btn" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            title="Open UNESCO official page for Hampi"
+                        >
+                            Learn More &rarr;
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             SECTION 3: INDIAN CULTURE AND TRADITIONS
+             Information on dances, handicrafts, cuisine, and languages.
+             =================================================================== -->
+        <section id="culture" class="content-section">
+            <div class="section-header">
+                <h2>Indian Culture and Traditions</h2>
+                <p class="section-subtitle">A multi-layered civilization expressing itself through soulful melodies, rhythmic dances, craftsmanship, and flavors.</p>
+            </div>
+
+            <div class="culture-grid">
+
+                <article class="culture-card">
+                    <figure>
+                        <img 
+                            src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Bharata_Natyam_Performance_DS.jpg" 
+                            alt="Classical Indian Bharatanatyam dancer performing on stage" 
+                            loading="lazy"
+                        >
+                    </figure>
+                    <h3>Dance &amp; Classical Music</h3>
+                    <p>
+                        India recognizes eight classical dance traditions: <strong>Bharatanatyam</strong> (Tamil Nadu), 
+                        <strong>Kathak</strong> (Northern India), <strong>Kathakali</strong> (Kerala), 
+                        <strong>Kuchipudi</strong> (Andhra Pradesh), <strong>Odissi</strong> (Odisha), 
+                        <strong>Manipuri</strong>, <strong>Mohiniyattam</strong>, and <strong>Sattriya</strong> (Assam).
+                    </p>
+                    <p>
+                        Our musical heritage is preserved in two grand systems: the Hindustani tradition of the north 
+                        and the Carnatic tradition of the south, both employing intricate melodic scales (ragas) and rhythmic cycles (talas).
+                    </p>
+                </article>
+
+                <article class="culture-card">
+                    <h3>Art &amp; Handicrafts</h3>
+                    <p>
+                        Traditional Indian handicrafts are world-renowned for their intricacy and sustainable use of natural materials:
+                    </p>
+                    <ul>
+                        <li><strong>Folk Paintings:</strong> Madhubani from Bihar, Warli tribal art from Maharashtra, and Pattachitra from Odisha.</li>
+                        <li><strong>Handloom Textiles:</strong> Banarasi brocades, Kanjeevaram pure silk, Chanderi, and Kashmiri Pashmina shawls.</li>
+                        <li><strong>Pottery &amp; Metalcraft:</strong> Jaipur blue pottery, Bidriware from Karnataka, and Moradabad brass artifacts.</li>
+                    </ul>
+                </article>
+
+                <article class="culture-card">
+                    <h3>Culinary Heritage</h3>
+                    <p>
+                        Indian cooking is an art form rooted in ancient Ayurvedic science. Dishes are harmoniously balanced 
+                        with therapeutic spices such as turmeric, cardamom, fenugreek, and black pepper.
+                    </p>
+                    <p>
+                        From the rich tandoori preparations and dal makhani of Punjab to the steamed idlis, spicy rasam, 
+                        and coconut curries of the southern coast, the traditional Indian <em>Thali</em> celebrates wholesome diversity on a single platter.
+                    </p>
+                </article>
+
+                <article class="culture-card">
+                    <h3>Languages &amp; Diversity</h3>
+                    <p>
+                        The Indian Constitution recognizes <strong>22 scheduled languages</strong> written in diverse indigenous scripts. 
+                        Major spoken languages include Hindi, Bengali, Marathi, Telugu, Tamil, Urdu, Gujarati, Kannada, and Malayalam.
+                    </p>
+                    <p>
+                        Despite linguistic and regional differences, the people of India are bonded by the ancient philosophy of 
+                        <em>"Vasudhaiva Kutumbakam"</em> (The World is One Family) and the proud ethos of <strong>"Unity in Diversity"</strong>.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             SECTION 4: INDIAN FESTIVALS
+             Celebrations of joy, seasons, faith, and harmony.
+             =================================================================== -->
+        <section id="festivals" class="content-section">
+            <div class="section-header">
+                <h2>Vibrant Festivals of India</h2>
+                <p class="section-subtitle">Every season in India brings celebrations that strengthen community bonds, hospitality, and joy.</p>
+            </div>
+
+            <div class="festivals-grid">
+
+                <!-- Festival 1: Diwali -->
+                <article class="festival-card">
+                    <figure>
+                        <img 
+                            src="https://upload.wikimedia.org/wikipedia/commons/5/50/Diwali_Diyas_Lamps.jpg" 
+                            alt="Lit earthen clay diya lamps during Diwali night" 
+                            loading="lazy"
+                        >
+                    </figure>
+                    <div class="festival-info">
+                        <h3>Diwali</h3>
+                        <span class="festival-tag">Festival of Lights</span>
+                        <p>
+                            Celebrated in autumn, Diwali marks the victory of righteousness over evil and light over darkness. 
+                            People decorate courtyards with colorful rangoli, light rows of clay diyas, prepare sweets, and gather with loved ones.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Festival 2: Holi -->
+                <article class="festival-card">
+                    <figure>
+                        <img 
+                            src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Holi_Colors.jpg" 
+                            alt="Bowls with colorful red, yellow, and blue gulal powder for Holi" 
+                            loading="lazy"
+                        >
+                    </figure>
+                    <div class="festival-info">
+                        <h3>Holi</h3>
+                        <span class="festival-tag">Festival of Colors</span>
+                        <p>
+                            Welcoming the advent of spring and the harvest season, Holi is an exuberant festival of love and laughter. 
+                            People play with vibrant organic herbal colors (gulal), sing folk songs, and share festive sweets like gujiya.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Festival 3: Eid -->
+                <article class="festival-card">
+                    <div class="festival-info">
+                        <h3>Eid-ul-Fitr &amp; Eid-ul-Adha</h3>
+                        <span class="festival-tag">Celebration of Gratitude</span>
+                        <p>
+                            Celebrated by Muslims across the nation, Eid-ul-Fitr marks the conclusion of the holy fasting month of Ramadan. 
+                            The day is marked by special congregational prayers, charitable donations (Zakat), warm hugs of brotherhood, and festive feasts including sheer khurma and biryani.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Festival 4: Christmas & Regional -->
+                <article class="festival-card">
+                    <div class="festival-info">
+                        <h3>Christmas &amp; Regional Feasts</h3>
+                        <span class="festival-tag">Harmony Across India</span>
+                        <p>
+                            Christmas is celebrated with great warmth, especially in Goa, Kerala, and the North East, featuring decorated stars, midnight mass, and cakes. 
+                            India also rejoices in harvest festivals like <strong>Pongal</strong>, <strong>Onam</strong>, <strong>Bihu</strong>, <strong>Baisakhi</strong>, and the grand <strong>Durga Puja</strong>.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             SECTION 5: IMPORTANCE OF HERITAGE & <aside>
+             Includes core article explaining why we must protect heritage,
+             alongside a semantic <aside> for supplementary conservation tips.
+             =================================================================== -->
+        <section id="importance-of-heritage" class="content-section">
+            <div class="section-header">
+                <h2>Importance of Heritage Conservation</h2>
+                <p class="section-subtitle">Protecting our historical monuments and living arts is a collective moral and constitutional responsibility.</p>
+            </div>
+
+            <div class="heritage-layout">
+
+                <!-- Main article within the section -->
+                <article class="heritage-reasons">
+                    <h3>Why Must We Safeguard Our Heritage?</h3>
+
+                    <div class="reason-item">
+                        <h4>1. Cultural Identity and Continuity</h4>
+                        <p>
+                            Our heritage serves as an anchor connecting modern society with centuries of ancestral wisdom, moral ideals, 
+                            and craftsmanship. Without preserving our monuments, languages, and folk arts, future generations lose their roots.
+                        </p>
+                    </div>
+
+                    <div class="reason-item">
+                        <h4>2. Masterclasses in Engineering and Sustainability</h4>
+                        <p>
+                            Ancient Indian structures—such as stepwells (Baolis), climate-responsive rock architecture, and temple water tanks—demonstrate 
+                            sophisticated knowledge of hydrology, passive cooling, and seismic resilience long before modern technology existed.
+                        </p>
+                    </div>
+
+                    <div class="reason-item">
+                        <h4>3. Economic Livelihoods &amp; Tourism</h4>
+                        <p>
+                            Cultural tourism sustains millions of Indian families, including traditional handloom weavers, artisans, local tour guides, 
+                            small vendors, and the regional hospitality industry. Protecting sites keeps local economies thriving.
+                        </p>
+                    </div>
+
+                    <div class="reason-item">
+                        <h4>4. Constitutional Duty of Indian Citizens</h4>
+                        <p>
+                            Under <strong>Article 51A(f)</strong> of the Constitution of India, it is the fundamental duty of every citizen 
+                            <em>"to value and preserve the rich heritage of our composite culture."</em>
+                        </p>
+                    </div>
+                </article>
+
+                <!-- ===========================================================
+                     <aside> TAG:
+                     Represents a portion of a document whose content is only 
+                     indirectly related to the document's main content (sidebar).
+                     =========================================================== -->
+                <aside class="heritage-sidebar" aria-label="Student Heritage Conservation Guide">
+                    <h3>Student Action Pledge</h3>
+                    <p>Simple practical ways every college student can contribute:</p>
+                    <ul>
+                        <li><strong>Never scratch or write</strong> names or graffiti on monument walls.</li>
+                        <li><strong>Practice zero waste:</strong> Do not litter plastics inside heritage complexes.</li>
+                        <li><strong>Support local artisans:</strong> Choose authentic handloom products over mass plastic goods.</li>
+                        <li><strong>Educate others:</strong> Share authentic historical facts and encourage respectful photography.</li>
+                    </ul>
+
+                    <div class="quote-box">
+                        <p>&ldquo;A nation's culture resides in the hearts and in the soul of its people.&rdquo;</p>
+                        <span class="quote-author">&mdash; Mahatma Gandhi</span>
+                    </div>
+                </aside>
+
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             SECTION 6: USEFUL LINKS
+             External reference links to official government and global heritage portals.
+             =================================================================== -->
+        <section id="useful-links" class="content-section">
+            <div class="section-header">
+                <h2>Useful Heritage Resources</h2>
+                <p class="section-subtitle">Verified national and international sources for academic research and tourism information.</p>
+            </div>
+
+            <div class="links-grid">
+
+                <div class="link-card">
+                    <h3>UNESCO World Heritage</h3>
+                    <p>Official catalog of India's world heritage monuments, criteria, conservation status, and global significance.</p>
+                    <a 
+                        href="https://whc.unesco.org/en/statesparties/in" 
+                        class="external-link" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                    >
+                        Visit UNESCO India Portal &rarr;
+                    </a>
+                </div>
+
+                <div class="link-card">
+                    <h3>Archaeological Survey of India</h3>
+                    <p>The premier government organization attached to the Ministry of Culture for archaeological research and conservation.</p>
+                    <a 
+                        href="https://asi.nic.in/" 
+                        class="external-link" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                    >
+                        Visit ASI Official Website &rarr;
+                    </a>
+                </div>
+
+                <div class="link-card">
+                    <h3>Incredible India</h3>
+                    <p>Official tourism platform created by the Ministry of Tourism, Government of India, celebrating destinations and events.</p>
+                    <a 
+                        href="https://www.incredibleindia.org/" 
+                        class="external-link" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                    >
+                        Visit Incredible India Portal &rarr;
+                    </a>
+                </div>
+
+                <div class="link-card">
+                    <h3>National Portal of India</h3>
+                    <p>Single-window access to information and cultural schemes under the Government of India.</p>
+                    <a 
+                        href="https://www.india.gov.in/topics/art-culture" 
+                        class="external-link" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                    >
+                        Visit Art &amp; Culture Portal &rarr;
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="back-to-top-container">
+                <a href="#top" class="back-to-top-link">&uarr; Back to Top of Page</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =======================================================================
+         4. <footer> TAG:
+         Represents a footer for its nearest sectioning content or sectioning root.
+         Typically contains authorship information, copyright data, or contact links.
+         ======================================================================= -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            
+            <div class="footer-about">
+                <h3>Indian Culture and Heritage</h3>
+                <p>
+                    This educational website was created as part of the Second Year college curriculum 
+                    to demonstrate clean, semantic HTML5 structure, responsive layout principles, and 
+                    the rich diversity of Indian civilization.
+                </p>
+                <div class="footer-quote">
+                    &ldquo;Preserve our past, cherish our heritage, and enrich the future.&rdquo;
+                </div>
+            </div>
+
+            <div class="footer-student-info">
+                <h3>Student Project Details</h3>
+                <div class="student-card">
+                    <ul>
+                        <li>
+                            <span class="label">Project:</span>
+                            <span class="value">Heritage Portal</span>
+                        </li>
+                        <li>
+                            <span class="label">Student Name:</span>
+                            <span class="value">[Student Name]</span>
+                        </li>
+                        <li>
+                            <span class="label">Roll Number:</span>
+                            <span class="value">[Roll Number / College ID]</span>
+                        </li>
+                        <li>
+                            <span class="label">Class:</span>
+                            <span class="value">Second Year (Sem IV)</span>
+                        </li>
+                        <li>
+                            <span class="label">College:</span>
+                            <span class="value">[Your College Name]</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024–2025 Indian Heritage Educational Website &bull; Built with Semantic HTML5 &amp; CSS3</p>
+            <p><a href="pure_html_version.html" title="View the raw HTML version without CSS">View Pure HTML Version (No CSS) &rarr;</a></p>
+        </div>
+    </footer>
+
+    <!-- =======================================================================
+         INTERACTIVE THEME TOGGLE SCRIPT (DARK / LIGHT MODE):
+         Switches theme attribute on <html>, updates button icon, and saves
+         the user's preference in localStorage for future visits.
+         ======================================================================= -->
+    <script>
+        (function() {
+            var themeToggleBtn = document.getElementById('theme-toggle');
+            if (!themeToggleBtn) return;
+
+            var toggleIcon = themeToggleBtn.querySelector('.toggle-icon');
+            var toggleText = themeToggleBtn.querySelector('.toggle-text');
+
+            function updateButtonUI(theme) {
+                if (theme === 'dark') {
+                    toggleIcon.textContent = '☀️';
+                    toggleText.textContent = 'Light Mode';
+                    themeToggleBtn.setAttribute('title', 'Switch to Light Mode');
+                    themeToggleBtn.setAttribute('aria-label', 'Switch to Light Mode');
+                } else {
+                    toggleIcon.textContent = '🌙';
+                    toggleText.textContent = 'Dark Mode';
+                    themeToggleBtn.setAttribute('title', 'Switch to Dark Mode');
+                    themeToggleBtn.setAttribute('aria-label', 'Switch to Dark Mode');
+                }
+            }
+
+            // Sync button state with current active theme
+            var currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+            updateButtonUI(currentTheme);
+
+            // Toggle on click
+            themeToggleBtn.addEventListener('click', function() {
+                var activeTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+                var nextTheme = activeTheme === 'dark' ? 'light' : 'dark';
+                
+                document.documentElement.setAttribute('data-theme', nextTheme);
+                localStorage.setItem('theme', nextTheme);
+                updateButtonUI(nextTheme);
+            });
+        })();
+    </script>
+
+</body>
+</html>
